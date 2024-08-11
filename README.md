@@ -15,7 +15,9 @@ Getting Started
 Before you begin, ensure you have the following installed on your machine:
 
 - Python 3.11 or later
+- PostgreSQL 12+
 - `pip` (Python package installer)
+- Virtual Environment Tool: venv or virtualenv
 - Git (for cloning the repository)
 
 ### Installation
@@ -28,31 +30,41 @@ Follow these steps to get the project up and running on your local machine:
 git clone [https://github.com/mirzaabdullah/shipment-api.git
 cd shipment-api](https://github.com/MirzaAbdullah/Shipments.git)
 
-2. **Create a virtual environment**:
+2. **Setting Up PostgreSQL**:
+   - On MacOS: `brew install postgresql`
+```
+   CREATE DATABASE shipment_db;
+   CREATE USER shipment_user WITH PASSWORD 'password';
+   GRANT ALL PRIVILEGES ON DATABASE shipment_db TO shipment_user;
+```
 
-It is recommended to use a virtual environment to isolate your dependencies. Run the following command to create and activate a virtual environment:
+3. **Create a virtual environment**:
 
-#### On macOS/Linux
+   It is recommended to use a virtual environment to isolate your dependencies. Run the following command to create and activate a virtual environment:
 
-python3 -m venv venv
-source venv/bin/activate
+   #### On macOS/Linux
+   
+   ```
+      python3 -m venv venv
+      source venv/bin/activate
+   ```
 
 
-3. **Install the required packages**:
+4. **Install the required packages**:
 
 With the virtual environment activated, install the dependencies listed in requirements.txt
 
 `pip install -r requirements.txt`
 
 
-4. **Set up environment variables**:
+5. **Set up environment variables**:
 
 Create a `.env` file in the root directory of the project and add the necessary environment variables. For example:
 
 `DATABASE_URL=postgresql://shipment_user:<your-password>@localhost/shipment_db`
 
 
-5. **Run the application**:
+6. **Run the application**:
 
 Start the FastAPI application with Uvicorn:
 
