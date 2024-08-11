@@ -107,7 +107,6 @@ The project includes telemetry with structured logging and Prometheus metrics:
   - `database.py`: Database connection and session management.
 
 - **tests/**: Contains unit tests for the application.
-- **locustfile.py**: Load testing script for Locust.
 - **requirements.txt**: Python dependencies.
 
 
