@@ -1,0 +1,12 @@
+fastapi
+pydantic
+psycopg2
+sqlalchemy
+uvicorn
+alembic
+loguru
+prometheus_client
+pytest
+httpx
+pytest-asyncio
+python-dotenv
