@@ -6,7 +6,6 @@ This project is a FastAPI-based application that manages shipment data, includin
 Features
 --------
 - **Shipment Management**: Create and retrieve shipment records with validation.
-- **Performance Testing**: Load testing with Locust and benchmarking with pytest-benchmark.
 - **Telemetry**: Structured logging with Loguru and metrics with Prometheus.
 
 Getting Started
@@ -26,8 +25,8 @@ Follow these steps to get the project up and running on your local machine:
 1. **Clone the repository**:
 
    Open your terminal and run the following command:
-git clone https://github.com/mirzaabdullah/shipment-api.git
-cd shipment-api
+git clone [https://github.com/mirzaabdullah/shipment-api.git
+cd shipment-api](https://github.com/MirzaAbdullah/Shipments.git)
 
 2. **Create a virtual environment**:
 
@@ -57,7 +56,7 @@ Create a `.env` file in the root directory of the project and add the necessary 
 
 Start the FastAPI application with Uvicorn:
 
-`uvicorn app.main --reload`
+`unicorn app.main --reload`
 
 
 The application should now be running at `http://127.0.0.1:8000`.
@@ -72,24 +71,6 @@ To run all the unit tests, use the following command:
 
 
 This command will discover and run all tests in the `tests/` directory.
-
-2. **Run performance tests**:
-
-To run performance tests with Locust, follow these steps:
-
-- **Install Locust** (if not already installed):
-
-  ```
-  pip install locust
-  ```
-
-- **Run Locust**:
-
-  ```
-  locust -f locustfile.py
-  ```
-
-- Open your browser and navigate to `http://localhost:8089` to configure and start the load test.
 
 Telemetry
 ---------
@@ -112,7 +93,7 @@ The project includes telemetry with structured logging and Prometheus metrics:
 
 Swagger API
 -------
-This project has swagger api integrated which can be viewed at `http://127.0.0.1:8000/docs#/`
+This project has Swagger API integrated which can be viewed at `http://127.0.0.1:8000/docs#/`
 
 ---
 Thank you for your interest in the Shipment API project! If you encounter any issues or have questions, please don't hesitate to reach out.
